@@ -6,7 +6,10 @@ abstract class AppTextStyles {
   TextStyle get card1Title;
   TextStyle get card2Title;
   TextStyle get card3E4Title;
+  TextStyle get card1Description;
   TextStyle get card2Description;
+  TextStyle get card3Description;
+  TextStyle get card4Description;
   TextStyle get buttonOnline;
   TextStyle get searchingRoutes;
   TextStyle get searchingRoutes2;
@@ -21,6 +24,11 @@ class AppTextStylesDefault implements AppTextStyles {
         fontSize: 14,
         fontWeight: FontWeight.w600,
         color: AppTheme.colors.card1Title,
+      );
+  @override
+  TextStyle get card1Description => GoogleFonts.inter(
+        fontSize: 13,
+        color: AppTheme.colors.card1Description,
       );
   @override
   TextStyle get card2Title => GoogleFonts.inter(
@@ -38,6 +46,16 @@ class AppTextStylesDefault implements AppTextStyles {
         fontSize: 14,
         fontWeight: FontWeight.w800,
         color: AppTheme.colors.card3E4Title,
+      );
+  @override
+  TextStyle get card3Description => GoogleFonts.inter(
+        fontSize: 13,
+        color: AppTheme.colors.card3Description,
+      );
+  @override
+  TextStyle get card4Description => GoogleFonts.inter(
+        fontSize: 13,
+        color: AppTheme.colors.card4Description,
       );
   @override
   TextStyle get buttonOnline => GoogleFonts.poppins(

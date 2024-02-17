@@ -8,14 +8,14 @@ class OnlineStatusWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 8, bottom: 8),
+      margin: EdgeInsets.only(top: 16, bottom: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(50),
             child: Container(
-              padding: EdgeInsets.only(left: 16, right: 16),
+              padding: EdgeInsets.only(left: 12, right: 12, top: 3, bottom: 3),
               color: !isOnline ? Colors.black : Colors.green,
               child: Text(
                 !isOnline ? 'Offline' : 'Você está online',

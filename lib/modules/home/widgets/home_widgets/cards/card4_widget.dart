@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:locallog_driver_interface/theme/app_theme.dart';
 
 class Card4Widget extends StatelessWidget {
@@ -38,12 +37,8 @@ class Card4Widget extends StatelessWidget {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: description,
-                          style: GoogleFonts.inter(
-                            color: Colors.white,
-                            fontSize: 13,
-                          ),
-                        ),
+                            text: description,
+                            style: AppTheme.textStyles.card4Description),
                         WidgetSpan(
                           child: SizedBox(width: 8),
                         ),

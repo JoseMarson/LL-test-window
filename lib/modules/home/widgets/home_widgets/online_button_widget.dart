@@ -8,17 +8,20 @@ class OnlineButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        ElevatedButton(
-          onPressed: onPressed,
-          child: Text('Ficar online', style: TextStyle(color: Colors.white)),
-          style: AppTheme.buttonOnline,
-        ),
-        SizedBox(height: 8),
-        Text("Você pode desativar quando quiser parar."),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 64.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            onPressed: onPressed,
+            child: Text('Ficar online', style: TextStyle(color: Colors.white)),
+            style: AppTheme.buttonOnline,
+          ),
+          SizedBox(height: 8),
+          Text("Você pode desativar quando quiser parar."),
+        ],
+      ),
     );
   }
 }

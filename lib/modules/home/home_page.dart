@@ -40,7 +40,7 @@ class _HomePageContentState extends State<_HomePageContent> {
               OnlineStatusWidget(isOnline: homeStore.isOnline),
               TextStatusWidget(isOnline: homeStore.isOnline),
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(5.0),
                 child: CarouselSliderWidget(),
               ),
               Padding(

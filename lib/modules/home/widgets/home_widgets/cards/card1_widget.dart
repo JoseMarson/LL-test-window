@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:locallog_driver_interface/theme/app_theme.dart';
 
 class Card1Widget extends StatelessWidget {
@@ -54,15 +53,10 @@ class Card1Widget extends StatelessWidget {
                   ),
                   Container(
                     width: 239,
-                    height: 54,
+                    height: 55,
                     margin: EdgeInsets.only(left: 16),
-                    child: Text(
-                      description,
-                      style: GoogleFonts.inter(
-                        color: Colors.black,
-                        fontSize: 13,
-                      ),
-                    ),
+                    child: Text(description,
+                        style: AppTheme.textStyles.card1Description),
                   ),
                 ],
               ),

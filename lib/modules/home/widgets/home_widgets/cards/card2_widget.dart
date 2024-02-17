@@ -27,10 +27,12 @@ class Card2Widget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
                       Container(
+                        margin: EdgeInsets.only(left: 20),
                         width: 15,
                         height: 15,
                         decoration: BoxDecoration(
@@ -50,9 +52,9 @@ class Card2Widget extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    width: 230,
-                    height: 54,
-                    margin: EdgeInsets.only(left: 12),
+                    width: 240,
+                    height: 51,
+                    margin: EdgeInsets.only(left: 20),
                     child: Text(
                       description,
                       style: AppTheme.textStyles.card2Description,

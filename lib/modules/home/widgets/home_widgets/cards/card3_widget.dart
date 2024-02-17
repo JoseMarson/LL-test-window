@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:locallog_driver_interface/theme/app_theme.dart';
 
 class Card3Widget extends StatelessWidget {
@@ -24,48 +23,42 @@ class Card3Widget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          title,
-                          style: AppTheme.textStyles.card3E4Title,
-                        ),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 16),
+                    child: Text(
+                      title,
+                      style: AppTheme.textStyles.card3E4Title,
+                    ),
                   ),
                   Container(
-                    width: 200,
-                    height: 54,
-                    margin: EdgeInsets.only(left: 16),
-                    child: RichText(
-                      text: TextSpan(
-                        children: [
-                          TextSpan(
-                            text: 'Entre em contato com o ',
-                            style: GoogleFonts.inter(
-                              color: Colors.white,
-                              fontSize: 13,
-                            ),
+                    width: 161,
+                    height: 34,
+                    margin: EdgeInsets.only(top: 5, left: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            children: [
+                              TextSpan(
+                                  text: 'Entre em contato com o ',
+                                  style: AppTheme.textStyles.card3Description),
+                              TextSpan(
+                                  text: ' Suporte LocalLog',
+                                  style: AppTheme.textStyles.card3E4Title),
+                              WidgetSpan(
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.white,
+                                  size: 16,
+                                ),
+                              ),
+                            ],
                           ),
-                          TextSpan(
-                            text: ' Suporte LocalLog',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                          WidgetSpan(
-                            child: Icon(
-                              Icons.arrow_forward,
-                              color: Colors.white,
-                              size: 16,
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ],

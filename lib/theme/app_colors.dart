@@ -12,7 +12,10 @@ abstract class AppColors {
   Color get backgroundCard2;
   Color get backgroundCard3;
   Color get backgroundCard4;
+  Color get card1Description;
   Color get card2Description;
+  Color get card3Description;
+  Color get card4Description;
   Color get buttonOnline;
   Color get searchingRoutes;
   Color get searchingRoutes2;
@@ -47,9 +50,15 @@ class AppColorsDefault implements AppColors {
   @override
   Color get card3E4Title => Color(0XFFFFFFFF);
   @override
+  Color get card1Description => Color(0XFF000000);
+  @override
   Color get card2Description => Color(0XFF000000);
   @override
-  Color get buttonOnline => Color(0XFF008000);
+  Color get card3Description => Color(0XFFFFFFFF);
+  @override
+  Color get card4Description => Color(0XFFFFFFFF);
+  @override
+  Color get buttonOnline => Color(0XFF00B73E);
   @override
   Color get searchingRoutes => Color(0XFF2196f3);
   @override
